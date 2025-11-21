@@ -22,7 +22,7 @@
 /*******************************************/
 
 html {
-    font-size: 62.5%;
+    font-size: 16px;
     color: white;
 }
 
@@ -43,11 +43,22 @@ header {
 header nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
 }
 
 header ul {
+    padding: 0;
     display: flex;
+    column-gap: 2rem;
     border: 2px solid white;
+    font-size: 1.25rem;
+}
+
+
+header ul  a {
+    text-decoration: none;
+    color: white;
 }
 
 header ul li {
@@ -59,6 +70,7 @@ nav span.nav-title {
     display: block;
     border: 2px solid white;
     height: fit-content;
+    font-size: 1.5rem;
 }
 
 footer {}
