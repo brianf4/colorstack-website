@@ -17,6 +17,7 @@
     clear: both;
 }
 
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -39,6 +40,16 @@ body {
 
 h1 {
     font-size: 3.8rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    color: #FFCE00;
+}
+
+.fa-code {
+    color: #FFCE00;
 }
 
 /******************************************
@@ -64,7 +75,7 @@ header ul {
 }
 
 
-header ul  a {
+header ul a {
     text-decoration: none;
     color: white;
 }
@@ -79,6 +90,7 @@ nav span.nav-title {
     border: 2px solid white;
     height: fit-content;
     font-size: 1.5rem;
+
 }
 
 footer {}
@@ -92,6 +104,19 @@ main section {
     width: 50%;
     padding: 5rem;
     border: 2px solid white;
+}
+
+main section > span {
+    display: block;
+    margin-bottom: 4px;
+    color: rgb(255, 206, 22);
+    font-size: 1.1rem;
+    border: none;
+    width: fit-content;
+    border-radius: 12px;
+    padding: 2px 4px;
+    /* background-color: #2a2c01; My favorite background color so far*/
+    background-color: rgba(255, 206, 22, 0.1);
 }
 /******************************************
 /* ADDITIONAL STYLES
