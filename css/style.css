@@ -39,9 +39,13 @@ body {
 }
 
 h1 {
-    font-size: 3.8rem;
+    font-size: 5rem;
     margin: 0;
     letter-spacing: 2px;
+}
+
+h1 span {
+    display: block;
 }
 
 a:hover {
@@ -118,6 +122,18 @@ main section > span {
     /* background-color: #2a2c01; My favorite background color so far*/
     background-color: rgba(255, 206, 22, 0.1);
 }
+
+/******************************************
+/* Media Queries
+/*******************************************/
+@media (min-width: 320px) {
+    h1 {
+        color: red;
+    }
+}
+
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
