@@ -38,7 +38,7 @@ body {
 
 }
 
-h1 {
+/* h1 {
     font-size: 5rem;
     margin: 0;
     letter-spacing: 2px;
@@ -46,7 +46,7 @@ h1 {
 
 h1 span {
     display: block;
-}
+} */
 
 a:hover {
     color: #FFCE00;
@@ -59,18 +59,15 @@ a:hover {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-    border: 2px solid white;
-}
 
-header nav {
+/* header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-}
+} */
 
-header ul {
+/* header ul {
     padding: 0;
     display: flex;
     column-gap: 2rem;
@@ -89,26 +86,20 @@ header ul li {
     list-style: none;
 }
 
-nav span.nav-title {
-    display: block;
-    border: 2px solid white;
-    height: fit-content;
-    font-size: 1.5rem;
-
-}
 
 footer {}
 
 main {
     border: 2px solid white;
+    width: 100%;
     display: flex;
-}
+} */
 
-main section {
+/* main section {
     width: 50%;
     padding: 5rem;
     border: 2px solid white;
-}
+} */
 
 main section > span {
     display: block;
@@ -128,10 +119,26 @@ main section > span {
 /*******************************************/
 @media (min-width: 320px) {
     h1 {
-        color: red;
+        font-size: 2rem;
+    }
+
+    nav ul, nav button {
+        display: none;
+    }
+
+    nav span.nav-title {
+        display: block;
+        height: fit-content;
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
 
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+    }
+}
 
 
 /******************************************
