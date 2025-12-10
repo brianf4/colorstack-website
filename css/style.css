@@ -25,7 +25,6 @@
 html {
     font-size: 16px;
     color: white;
-
     font-family: "Outfit", sans-serif;
     font-style: normal;
 }
@@ -35,7 +34,7 @@ body {
     /* background-color: #1b1b1d; */
     background-color: #171719;
     /* background-color: #191919; */
-
+    padding: 0 .5rem;
 }
 
 /* h1 {
@@ -127,8 +126,7 @@ main section > span {
 
     nav {
         border-bottom: 2px solid white;
-
-    
+        padding: .5rem 0;
     }
 
     nav ul, nav button {
@@ -143,8 +141,9 @@ main section > span {
     }
 
     main {
-        padding: .5rem;
+        padding-top: 1rem;
     }
+
 }
 
 @media (min-width: 768px) {
