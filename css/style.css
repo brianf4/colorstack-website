@@ -17,7 +17,6 @@
     clear: both;
 }
 
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -34,7 +33,7 @@ body {
     /* background-color: #1b1b1d; */
     background-color: #171719;
     /* background-color: #191919; */
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
 }
 
 /* h1 {
@@ -48,11 +47,11 @@ h1 span {
 } */
 
 a:hover {
-    color: #FFCE00;
+    color: #ffce00;
 }
 
 .fa-code {
-    color: #FFCE00;
+    color: #ffce00;
 }
 
 /******************************************
@@ -117,7 +116,6 @@ main section > span {
 /* Media Queries
 /*******************************************/
 /* Left and rightpadding at this width should be .5rem for all sections */
- 
 
 @media (min-width: 320px) {
     h1 {
@@ -126,10 +124,11 @@ main section > span {
 
     nav {
         border-bottom: 2px solid white;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
     }
 
-    nav ul, nav button {
+    nav ul,
+    nav button {
         display: none;
     }
 
@@ -144,6 +143,14 @@ main section > span {
         padding-top: 1rem;
     }
 
+    main section:last-child {
+        border: 2px solid red;
+    }
+
+    main section div {
+        border: 2px solid white;
+        padding: 1.5rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -151,7 +158,6 @@ main section > span {
         display: flex;
     }
 }
-
 
 /******************************************
 /* ADDITIONAL STYLES
