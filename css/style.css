@@ -36,15 +36,39 @@ body {
     padding: 0 0.5rem;
 }
 
-/* h1 {
-    font-size: 5rem;
-    margin: 0;
-    letter-spacing: 2px;
+h1 {
+    font-size: 2rem;
 }
 
-h1 span {
+nav {
+    border-bottom: 2px solid white;
+    padding: 0.5rem 0;
+}
+
+nav ul,
+nav button {
+    display: none;
+}
+
+nav span.nav-title {
     display: block;
-} */
+    height: fit-content;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main {
+    padding-top: 1rem;
+}
+
+main section:last-child {
+    border: 2px solid red;
+}
+
+main section div {
+    border: 2px solid white;
+    padding: 1.5rem;
+}
 
 a:hover {
     color: #ffce00;
@@ -117,46 +141,16 @@ main section > span {
 /*******************************************/
 /* Left and rightpadding at this width should be .5rem for all sections */
 
-@media (min-width: 320px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    nav {
-        border-bottom: 2px solid white;
-        padding: 0.5rem 0;
-    }
-
-    nav ul,
-    nav button {
-        display: none;
-    }
-
-    nav span.nav-title {
-        display: block;
-        height: fit-content;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    main {
-        padding-top: 1rem;
-    }
-
-    main section:last-child {
-        border: 2px solid red;
-    }
-
-    main section div {
-        border: 2px solid white;
-        padding: 1.5rem;
-    }
-}
-
 @media (min-width: 768px) {
     nav ul {
         display: flex;
     }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
 
 /******************************************
