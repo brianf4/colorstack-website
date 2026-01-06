@@ -123,23 +123,16 @@ main {
     border: 2px solid white;
 } */
 
-main section > span {
-    display: block;
-    margin-bottom: 4px;
-    color: rgb(255, 206, 22);
-    font-size: 1.1rem;
-    border: none;
-    width: fit-content;
-    border-radius: 12px;
-    padding: 2px 4px;
-    /* background-color: #2a2c01; My favorite background color so far*/
-    background-color: rgba(255, 206, 22, 0.1);
+/*Grabs both buttons*/
+main section:first-child div {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /******************************************
 /* Media Queries
 /*******************************************/
-/* Left and rightpadding at this width should be .5rem for all sections */
 
 @media (min-width: 768px) {
     nav ul {
@@ -156,3 +149,16 @@ main section > span {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+.pill {
+    display: block;
+    margin-bottom: 4px;
+    color: rgb(255, 206, 22);
+    font-size: 1.1rem;
+    border: none;
+    width: fit-content;
+    border-radius: 12px;
+    padding: 2px 4px;
+    /*Favorite background color so far*/
+    background-color: rgba(255, 206, 22, 0.1);
+}
