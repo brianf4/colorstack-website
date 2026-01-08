@@ -65,11 +65,6 @@ main section:last-child {
     border: 2px solid red;
 }
 
-main section div {
-    border: 2px solid white;
-    padding: 1.5rem;
-}
-
 a:hover {
     color: #ffce00;
 }
@@ -82,54 +77,28 @@ a:hover {
 /* LAYOUT
 /*******************************************/
 
-/* header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-} */
-
-/* header ul {
-    padding: 0;
-    display: flex;
-    column-gap: 2rem;
-    border: 2px solid white;
-    font-size: 1.25rem;
-}
-
-
-header ul a {
-    text-decoration: none;
-    color: white;
-}
-
-header ul li {
-    border: 2px solid lightgreen;
-    list-style: none;
-}
-
-
-footer {}
-
-main {
-    border: 2px solid white;
-    width: 100%;
-    display: flex;
-} */
-
-/* main section {
-    width: 50%;
-    padding: 5rem;
-    border: 2px solid white;
-} */
-
 /*Grabs both buttons*/
 main section:first-child div {
-    padding: 0;
+    padding: 1.5rem 0.5rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
+button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+main section:first-child div button:first-child {
+    background: #ffce00;
+}
+
+main section:first-child div button:last-child {
+    background: #171719;
+    color: white;
+    border: 1px solid darkgray;
+}
 /******************************************
 /* Media Queries
 /*******************************************/
