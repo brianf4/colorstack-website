@@ -61,8 +61,16 @@ main {
     padding-top: 1rem;
 }
 
-main section:last-child {
+main section:last-child > div {
     border: 2px solid red;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 18px 0;
+}
+
+main p {
+    line-height: 1.5rem;
 }
 
 a:hover {
