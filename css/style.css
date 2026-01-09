@@ -103,9 +103,9 @@ a:hover {
 
 /*Grabs both buttons*/
 main section:first-child div {
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 0;
     display: flex;
-    justify-content: space-between;
+    gap: 0 16px;
 }
 
 button {
