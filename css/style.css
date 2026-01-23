@@ -31,13 +31,18 @@ html {
 body {
     /* Different black background colors */
     /* background-color: #1b1b1d; */
-    background-color: #171719;
+    /*background-color: #171719;*/
+    background-color: #1f1f22;
     /* background-color: #191919; */
     padding: 0 0.5rem;
 }
 
 h1 {
     font-size: 2rem;
+}
+
+span {
+    display: block;
 }
 
 nav {
@@ -123,6 +128,47 @@ main section:first-child div button:last-child {
     color: white;
     border: 1px solid darkgray;
 }
+
+.about-section {
+    padding: 2rem 0;
+}
+
+.about-section p {
+    margin: 0;
+}
+
+.about-card-container {
+    padding: 2rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+}
+
+.about-card-container section {
+    border: 2px solid darkgray;
+    padding: 2rem 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+    background-color: #2a2a2e;
+}
+
+.about-card-container span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.about-card-container div {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 18px;
+    margin: 0 auto;
+    background-color: #272319;
+}
+
 /******************************************
 /* Media Queries
 /*******************************************/
