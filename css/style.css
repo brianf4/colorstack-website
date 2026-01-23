@@ -197,7 +197,7 @@ main section:first-child div button:last-child {
     border: none;
     width: fit-content;
     border-radius: 12px;
-    padding: 2px 4px;
+    padding: 2px 6px;
     /*Favorite background color so far*/
     background-color: rgba(255, 206, 22, 0.1);
 }
