@@ -169,6 +169,10 @@ main section:first-child div button:last-child {
     background-color: #272319;
 }
 
+.board-section > section:first-child {
+    text-align: center;
+}
+
 .board-section .name {
     font-size: 1.4rem;
     font-weight: bold;
@@ -178,33 +182,89 @@ main section:first-child div button:last-child {
     color: #ffce00;
 }
 
-.board-section .contact {
+.card .contact {
     display: flex;
     margin: 0px;
     gap: 0 12px;
     padding: 0px;
-    border: 1px solid white;
     list-style-type: none;
 }
 
 .card-container {
-    border: 2px solid lightskyblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    padding: 25px 0;
 }
 
 .card {
     width: 85%;
     display: flex;
     flex-direction: column;
-    border: 2px solid yellow;
+    border: 1px solid darkgray;
+    border-radius: 12px;
+    gap: 16px 0;
+    overflow: hidden;
+}
+
+.card:hover {
+    border: 1px solid #ffce00;
+}
+
+/*Grabs just the name & role*/
+.card section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0;
+}
+
+.card section:last-child {
+    padding: 12px;
 }
 
 .card img {
     width: 100%;
     height: auto;
+    transition: transform 0.5s ease;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.contact i {
+    color: white;
+}
+
+.contact i:hover {
+    color: #ffce00;
+}
+/*
+Apprantly you can add gaps to things that are
+already flexed? idk I thought you can only
+apply  gaps to parents and the children
+respoond. Have to look more into this mess around
+with it.
+
+Gaps control the spacing between items. As long as
+the containter is flexed from my understading. But
+I didn't apply a display of flex on
+'.card > section{}' so I'm not sure what is going on.
+
+Potential reason: the '.card section' above I think
+is applying the display flex on it already. Which is
+why I'm able to apply the gap rule below.
+
+Link to learn more about flex gaps:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-gap-row-gap-column-gap
+*/
+.card > section {
+    gap: 20px;
 }
 
 /******************************************
