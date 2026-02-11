@@ -267,6 +267,22 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-gap-row-gap-column-ga
     gap: 20px;
 }
 
+.events .card {
+    padding: 12px;
+}
+
+/*.card > section flex this. I gave this more specificity to be able to add the gap */
+.card .date-container {
+    border: 2px solid white;
+    gap: 0;
+}
+
+.events .pill,
+.day,
+.month {
+    margin: auto;
+}
+
 /******************************************
 /* Media Queries
 /*******************************************/
