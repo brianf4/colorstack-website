@@ -84,23 +84,48 @@ main {
     padding: 2rem 0.8rem;
 }
 
-main section:last-child {
+.club-section {
     display: flex;
     flex-direction: column;
     gap: 20px 0px;
-}
-
-.club-section {
     padding: 2rem 0;
 }
 
-main section:last-child > div {
-    border: 1px solid darkgray;
+.club-section section {
+    display: flex;
+    column-gap: 16px;
+}
+
+.feature-card {
+    background-color: var(--bg2);
+    border: 1px solid var(--border);
+    width: 100%;
     border-radius: 12px;
     padding: 2rem 1.4rem;
     display: flex;
     flex-direction: column;
     gap: 25px 0;
+    transition:
+        border-color 0.2s,
+        transform 0.25s;
+}
+
+.feature-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--yellow-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--yellow);
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.feature-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-3px);
 }
 
 main p {
@@ -190,13 +215,6 @@ a:hover {
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-/*Grabs both buttons*/
-main section:first-child div {
-    padding: 1.5rem 0;
-    display: flex;
-    gap: 0 16px;
-}
 
 button {
     padding: 12px;
