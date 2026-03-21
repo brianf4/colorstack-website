@@ -199,7 +199,7 @@ em {
 }
 
 .club-section span:last-child {
-    color: lightgray;
+    color: var(--muted2);
 }
 
 /**********************/
