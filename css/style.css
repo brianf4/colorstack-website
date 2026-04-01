@@ -123,14 +123,16 @@ main {
     margin-bottom: 0.25rem;
 }
 
-.feature-card:hover {
+.feature-card:hover,
+.about-card:hover {
     border-color: var(--border-hover);
     transform: translateY(-3px);
 }
 
 main p,
 .about-section p,
-.events-section p {
+.events-section p,
+.board-section p {
     line-height: 1.7rem;
     font-size: 1.1rem;
     color: var(--muted2);
@@ -256,7 +258,9 @@ main section:first-child div button:last-child {
     align-items: flex-start;
     text-align: start;
     gap: 1rem;
-    transition: border-color 0.2s;
+    transition:
+        border-color 0.2s,
+        transform 0.25s;
 }
 
 .about-card-icon {
@@ -282,8 +286,8 @@ main section:first-child div button:last-child {
     font-size: 1rem;
 }
 
-.board-section > section:first-child {
-    text-align: center;
+.board-section {
+    padding: 2rem 0.8rem;
 }
 
 .board-section .name {
@@ -312,7 +316,6 @@ main section:first-child div button:last-child {
 }
 
 .card {
-    width: 85%;
     display: flex;
     flex-direction: column;
     border: 1px solid darkgray;
@@ -340,6 +343,11 @@ main section:first-child div button:last-child {
     width: 100%;
     height: auto;
     transition: transform 0.5s ease;
+}
+
+.card section:last-child > span,
+.card ul i {
+    color: var(--muted);
 }
 
 .img-container {
