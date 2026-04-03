@@ -47,7 +47,6 @@ for (let i = 0; i < boardMember.length; i++) {
       </section>
   </section>`;
   memberList.innerHTML += card;
-  // memberName[i].innerText = boardMembers[i].firstName;
 }
 
 console.log(hello());
