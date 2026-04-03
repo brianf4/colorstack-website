@@ -392,42 +392,73 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-gap-row-gap-column-ga
     padding: 2rem 0.8rem;
 }
 
-.events .card {
-    padding: 3rem 1rem;
+.event-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
 }
 
-/*.card > section flex this. I gave this more specificity to be able to add the gap */
-.card .date-container {
-    border: 2px solid white;
-    gap: 0;
+.date-container {
+    background: var(--yellow-dim);
+    border: 1px solid rgba(255, 206, 0, 0.2);
+    border-radius: 10px;
+    min-width: 54px;
+    padding: 0.6rem;
+    text-align: center;
 }
 
-.events .pill,
-.day,
-.month {
-    margin: auto;
+.date-container .day {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--yellow);
+    line-height: 1;
 }
 
-.name-of-event,
-.day {
-    font-size: 1.3rem;
-    font-weight: bold;
+.date-container .month {
+    font-size: 0.7rem;
+    color: var(--muted2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-top: 4px;
 }
 
-.month {
-    font-size: 0.95rem;
-    color: lightgray;
+.event-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.name-of-event {
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .description-of-event {
-    color: lightgray;
+    font-size: 0.875rem;
+    color: var(--muted2);
+    line-height: 1.5;
 }
 
-.time,
-.location {
+.event-datetime {
     display: flex;
-    column-gap: 8px;
-    color: lightgray;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+}
+
+.event-datetime span {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.event-datetime i {
+    color: var(--yellow);
+    font-size: 0.75rem;
 }
 
 /******************************************

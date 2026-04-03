@@ -3,8 +3,6 @@ import { boardMember } from "./boardMembersData.js";
 
 const memberList = document.querySelector(".card-container");
 
-const memberName = document.querySelectorAll(".name");
-
 for (let i = 0; i < boardMember.length; i++) {
   let card = `<section class="card">
       <section class="img-container">
