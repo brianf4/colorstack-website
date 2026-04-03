@@ -1,10 +1,11 @@
-const boardMembers = [
+export const boardMember = [
   {
     firstName: "Ben",
     lastName: "Issa",
     role: "President",
     description: "Can recognize most languages by listening to it",
     img: "./public/imgs/ben-issa.jpg",
+    alt: "Image of President Ben Issa",
     socials: {
       github: "https://github.com/ben-asmara",
       linkedin: "https://www.linkedin.com/in/ben-daouda/",
@@ -17,6 +18,7 @@ const boardMembers = [
     role: "Vice President",
     description: "Competes in video game tournaments sometimes",
     img: "./public/imgs/andrew-gutierrez.jpg",
+    alt: "Image of Vice President Andrew Gutierrez",
     socials: {
       github: null,
       linkedin: "https://www.linkedin.com/in/andrew-gutierrez-8534a8385/",
@@ -29,6 +31,7 @@ const boardMembers = [
     role: "Treasurer",
     description: "Can play the guitar and tennis",
     img: "./public/imgs/joshua-padillia.jpg",
+    alt: "Image of Treasurer Joshua Padilla",
     socials: {
       github: null,
       linkedin: "https://www.linkedin.com/in/joshua-padilla-0a845813b/",
@@ -41,6 +44,7 @@ const boardMembers = [
     role: "Secretary",
     description: "A keyboard enthusiast",
     img: "./public/imgs/brian-fuentes.jpg",
+    alt: "Image of Secretary Brian Fuentes",
     socials: {
       github: "https://github.com/brianf4",
       linkedin: "https://www.linkedin.com/in/brian-fuentes-18ab62182/",
@@ -53,6 +57,7 @@ const boardMembers = [
     role: "Outreach Chair",
     description: "Loves Pokemon",
     img: "./public/imgs/alex-lopez.png",
+    alt: "Image of Outreach Chair Alejandro Lopez",
     socials: {
       github: "https://github.com/alexghyet",
       linkedin: "https://www.linkedin.com/in/alejandro-lopez-45191b1a2/",
@@ -65,6 +70,7 @@ const boardMembers = [
     role: "Events Chair",
     description: "Loves playing soccer, volleyball, and video games",
     img: "./public/imgs/francis-agnyemang.jpg",
+    alt: "Image of Events Chair Francis Agnyemang",
     socials: {
       github: "https://github.com/rockynana",
       linkedin: "https://www.linkedin.com/in/francis-agyemang/",
@@ -77,6 +83,7 @@ const boardMembers = [
     role: "Development Chair",
     description: "Loves going to concerts and puzzling",
     img: "./public/imgs/grecia-campos.jpg",
+    alt: "Image of Development Chair Grecia Campos",
     socials: {
       github: null,
       linkedin: "https://www.linkedin.com/in/greciavcampos/",
@@ -89,6 +96,7 @@ const boardMembers = [
     role: "Communications Chair",
     description: "Has an identical twin sister and loves going to concerts",
     img: "./public/imgs/thelma-ere.jpg",
+    alt: "Image of Communications Chair Thelma Ere",
     socials: {
       github: "https://github.com/ThelmaEre",
       linkedin: "https://www.linkedin.com/in/thelmaere/",
@@ -101,6 +109,7 @@ const boardMembers = [
     role: "Communications Chair",
     description: "Loves to create social media content",
     img: "./public/imgs/lynette-pena.jpg",
+    alt: "Image of Communications Chair Lynette Pena",
     socials: {
       github: null,
       linkedin: "https://www.linkedin.com/in/lynette-pena-b70b67372/",
@@ -108,3 +117,7 @@ const boardMembers = [
     },
   },
 ];
+
+export function hello() {
+  return "Hello World";
+}
