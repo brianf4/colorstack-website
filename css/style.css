@@ -461,6 +461,46 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-gap-row-gap-column-ga
     font-size: 0.75rem;
 }
 
+.join-section {
+    border: 1px solid rgba(255, 206, 0, 0.18);
+    background: linear-gradient(135deg, var(--bg2) 0%, #1e1e10 100%);
+    border-radius: 20px;
+    text-align: center;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+    gap: 20px 0;
+}
+
+.join-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at 50% 0%,
+        rgba(255, 206, 0, 0.08) 0%,
+        transparent 60%
+    );
+    pointer-events: none;
+}
+
+.join-section h2,
+.join-section p {
+    margin: 0;
+}
+
+.join-section p {
+    color: var(--muted2);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.join-section .btn-primary {
+    align-self: center;
+}
+
 /******************************************
 /* Media Queries
 /*******************************************/
