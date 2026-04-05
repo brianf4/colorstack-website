@@ -465,6 +465,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-gap-row-gap-column-ga
     border: 1px solid rgba(255, 206, 0, 0.18);
     background: linear-gradient(135deg, var(--bg2) 0%, #1e1e10 100%);
     border-radius: 20px;
+    margin-bottom: 4rem;
     text-align: center;
     padding: 3rem 2rem;
     display: flex;
@@ -499,6 +500,41 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-gap-row-gap-column-ga
 
 .join-section .btn-primary {
     align-self: center;
+}
+
+footer {
+    border-top: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    padding: 0;
+    gap: 2.4rem;
+    color: var(--muted);
+}
+
+footer li {
+    list-style: none;
+}
+
+footer span i {
+    color: #ffd4e2;
+}
+
+footer span {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
 }
 
 /******************************************
