@@ -138,6 +138,10 @@ main p,
     color: var(--muted2);
 }
 
+main p {
+    max-width: 560px;
+}
+
 .hero-buttons {
     display: flex;
     gap: 0.75rem;
@@ -553,7 +557,7 @@ footer section {
         list-style: none;
     }
     nav li a {
-        color: lightgray;
+        color: var(--muted2);
         text-decoration: none;
     }
     .nav-title {
@@ -562,6 +566,10 @@ footer section {
 
     main {
         padding: 5rem 1.5rem 4rem;
+    }
+
+    main p {
+        font-size: 1rem;
     }
 }
 
