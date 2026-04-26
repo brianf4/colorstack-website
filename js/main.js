@@ -1,10 +1,9 @@
-import { hello } from "./boardMembersData.js";
 import { boardMember } from "./boardMembersData.js";
 
 const memberList = document.querySelector(".card-container");
 
 for (let i = 0; i < boardMember.length; i++) {
-  let card = `<section class="card">
+  let card = `<section class="card" data-id="${boardMember[i].id}" >
       <section class="img-container">
           <img
               src="${boardMember[i].img}"
@@ -46,5 +45,3 @@ for (let i = 0; i < boardMember.length; i++) {
   </section>`;
   memberList.innerHTML += card;
 }
-
-console.log(hello());

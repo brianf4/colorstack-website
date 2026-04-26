@@ -1,5 +1,6 @@
 export const boardMember = [
   {
+    id: 1,
     firstName: "Ben",
     lastName: "Issa",
     role: "President",
@@ -13,6 +14,7 @@ export const boardMember = [
     },
   },
   {
+    id: 2,
     firstName: "Andrew",
     lastName: "Gutierrez",
     role: "Vice President",
@@ -26,6 +28,7 @@ export const boardMember = [
     },
   },
   {
+    id: 3,
     firstName: "Joshua",
     lastName: "Padilla",
     role: "Treasurer",
@@ -39,6 +42,7 @@ export const boardMember = [
     },
   },
   {
+    id: 4,
     firstName: "Brian",
     lastName: "Fuentes",
     role: "Secretary",
@@ -52,6 +56,7 @@ export const boardMember = [
     },
   },
   {
+    id: 5,
     firstName: "Alejandro",
     lastName: "Lopez",
     role: "Outreach Chair",
@@ -65,10 +70,11 @@ export const boardMember = [
     },
   },
   {
+    id: 6,
     firstName: "Francis",
     lastName: "Agnyemang",
     role: "Events Chair",
-    description: "Loves playing soccer, volleyball, and video games",
+    description: "Plays soccer & volleyball",
     img: "./public/imgs/francis-agnyemang.jpg",
     alt: "Image of Events Chair Francis Agnyemang",
     socials: {
@@ -78,6 +84,7 @@ export const boardMember = [
     },
   },
   {
+    id: 7,
     firstName: "Grecia",
     lastName: "Campos",
     role: "Development Chair",
@@ -91,6 +98,7 @@ export const boardMember = [
     },
   },
   {
+    id: 8,
     firstName: "Thelma",
     lastName: "Ere",
     role: "Communications Chair",
@@ -104,6 +112,7 @@ export const boardMember = [
     },
   },
   {
+    id: 9,
     firstName: "Lynette",
     lastName: "Pena",
     role: "Communications Chair",
@@ -117,7 +126,3 @@ export const boardMember = [
     },
   },
 ];
-
-export function hello() {
-  return "Hello World";
-}

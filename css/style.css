@@ -571,6 +571,36 @@ footer section {
     main p {
         font-size: 1rem;
     }
+
+    /*About Section*/
+    .about-card-container {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .img-container {
+        aspect-ratio: 3/4;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* crops and fills without stretching */
+    }
+
+    .card[data-id="6"] .name {
+        font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 992px) {
